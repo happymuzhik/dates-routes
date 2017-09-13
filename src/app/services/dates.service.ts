@@ -18,7 +18,7 @@ export class DatesService {
 
   constructor() { }
 
-  getAllDates(){
+  getAllDates() {
     return Observable.timer(2000)
       .map( () => DATES.map( date => new AppDate(+date.year, +date.month)));
   }
